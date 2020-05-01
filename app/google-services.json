@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "906785021760",
+    "firebase_url": "https://pay-fines.firebaseio.com",
+    "project_id": "pay-fines",
+    "storage_bucket": "pay-fines.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906785021760:android:219d6c030eb682b87324a5",
+        "android_client_info": {
+          "package_name": "com.example.payfines"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906785021760-kfd8ctvu7ufiulcpml760vsulegbtjd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.payfines",
+            "certificate_hash": "f0494ab0f1df4cb743c5365cd7024a8c685ee83c"
+          }
+        },
+        {
+          "client_id": "906785021760-78vrip16pr7qpnmv8ktol4q8ts7fdgip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqYW0MapBwH7JMTK-PRPA4PjvO4Ayxk4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906785021760-78vrip16pr7qpnmv8ktol4q8ts7fdgip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Pay Fines</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="Login">login</string>
+    <string name="title_activity_fines_list">FinesList</string>
+    <string name="action_settings">Settings</string>
+    <string name="finesList">Fines List</string>
+    <string name="rules_id">ID</string>
+    <string name="rules_name">Rules</string>
+    <string name="rules_lkr">LKR</string>
+    <string name="btnNext">Next</string>
+    <string name="SLPolice">Sri Lanka Police Department</string>
+    <string name="details_of_offender">Details of Offender</string>
+    <string name="DrivingLicenseNo">Driving License No</string>
+    <string name="title_activity_linear_layoutnew">LinearLayoutnew</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pay_fines">Payment Details</string>
+    <string name="fine_massage">Fine Massage</string>
+    <string name="fine_Total">Fine Total</string>
+    <string name="confirm_fines">Confirm Fines Details</string>
+
+
+    <string name="Rule_01">වේගයෙන් පැදවීම.\n வேகமாகச் செடி \n Speeding</string>
+    <string name="Rule_02">තැවැත්වීම හෝ නවතා තැබීම \n நிற்பாட்டல் \n Parking</string>
+    <string name="Rule_03">සංඥා සහ පොලිස් නිලධාරීන්ගේ විධාන \n பொலிசாரின் பணிப்புரைக்கு \n Signals directions of Police Officer</string>
+    <string name="Rule_04">බලපත්‍ර නොමැතිව පැදවීම \n அனுப் பத், இல்லாமல் செலுத்துதல் \n Without D.L.</string>
+    <string name="Rule_05">අවු. 18ට අඩු අය රිය පැදවීම \n வயதுக்கு குறைந்தவர் வாகனம் செலுத்த \n Driving under 18 years of age</string>
+    <string name="Rule_06">Rule_06">බලපත්‍ර නොමැති අයෙකු \n வேலைக்கு அமர்த்துதல் \n Employing' person without D.L.</string>
+    <string name="Rule_07">ආදායම් බලපත්‍රය රැගෙන නොයෑම \n இறைவரி அனு. பத். கொண்டு செல்  \n R. L not carried</string>
+
+
+    <string name="Rule_01_LKR">1000</string>
+    <string name="Rule_02_LKR">500</string>
+    <string name="Rule_03_LKR">1000</string>
+    <string name="Rule_04_LKR">2500</string>
+    <string name="Rule_05_LKR">5000</string>
+    <string name="Rule_06_LKR">3000</string>
+    <string name="Rule_07_LKR">500</string>
+</resources>

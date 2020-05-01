@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PayFines">
+
+    <TextView
+        android:id="@+id/offender_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="@string/pay_fines" />
+
+    <TextView
+        android:id="@+id/payMethodL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Payment Method" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_column="1"
+                android:layout_weight="3"
+                app:srcCompat="@drawable/visa_card_logo" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_column="2"
+                android:layout_weight="3"
+                app:srcCompat="@drawable/master_card_logo" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_column="3"
+                android:layout_weight="3"
+                app:srcCompat="@drawable/american_express_logo" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnConfPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style"
+        android:text="Confirm Payment"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

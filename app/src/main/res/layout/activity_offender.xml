@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Offender">
+
+    <TextView
+        android:id="@+id/offender_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="@string/details_of_offender" />
+
+    <TextView
+        android:id="@+id/drivingLicenseNoL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/DrivingLicenseNo" />
+
+    <EditText
+        android:id="@+id/drivingLicenseNoE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Driving License No"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/offenderNameL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/offenderNameE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/offenderEmailL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/offenderEmailE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/offenderAddressL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address" />
+
+    <EditText
+        android:id="@+id/offenderAddressE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/offenderContactL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact No" />
+
+    <EditText
+        android:id="@+id/offenderContactE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Contact No"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/locationL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location of the Committed Offence" />
+
+    <EditText
+        android:id="@+id/locationE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Location"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/btnOffenDtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_style"
+        android:text="Confirm Fine" />
+
+</LinearLayout>
