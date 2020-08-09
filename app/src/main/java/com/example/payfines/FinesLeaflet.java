@@ -189,7 +189,7 @@ public class FinesLeaflet extends AppCompatActivity {
             fineObj.setRule((this.ruleArray_list));
             fineObj.setDateTime(this.dateTime);
 
-            fineId = this.dlNo+this.currentTimeMil;
+            fineId = this.currentTimeMil + this.dlNo;
 
             dbRef.child(fineId).setValue(fineObj);
 
