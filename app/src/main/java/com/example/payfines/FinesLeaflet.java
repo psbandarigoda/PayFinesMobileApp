@@ -85,9 +85,12 @@ public class FinesLeaflet extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(FinesLeaflet.this, PayFines.class);
+                addFine();
                 intent.putExtra("userName", userName);
                 intent.putExtra("fineID", fineId);
-                addHotel();
+                intent.putExtra("fineTotPrice", fineTotal.toString());
+                intent.putExtra("contact", oContact);
+                intent.putExtra("name", oName);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "Fines Confirmed", Toast.LENGTH_LONG).show();
             }
@@ -159,7 +162,7 @@ public class FinesLeaflet extends AppCompatActivity {
                 sumLKR.add(finesPrice);
             }
             if (currentX == 7) {
-                fineList = getResources().getString(R.string.Rule_06);
+                fineList = getResources().getString(R.string.Rule_07);
                 ruleArray_list.add("\n");
                 ruleArray_list.add(fineList);
                 finesPriceView = getResources().getString(R.string.Rule_07_LKR);
@@ -168,11 +171,101 @@ public class FinesLeaflet extends AppCompatActivity {
                 finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_07_LKR));
                 sumLKR.add(finesPrice);
             }
+            if (currentX == 8) {
+                fineList = getResources().getString(R.string.Rule_08);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_08_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_08_LKR));
+                sumLKR.add(finesPrice);
+            }
+            if (currentX == 9) {
+                fineList = getResources().getString(R.string.Rule_09);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_09_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_09_LKR));
+                sumLKR.add(finesPrice);
+            }
+            if (currentX == 10) {
+                fineList = getResources().getString(R.string.Rule_10);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_10_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_10_LKR));
+                sumLKR.add(finesPrice);
+            }
+            if (currentX == 11) {
+                fineList = getResources().getString(R.string.Rule_11);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_11_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_11_LKR));
+                sumLKR.add(finesPrice);
+            }
+            if (currentX == 12) {
+                fineList = getResources().getString(R.string.Rule_12);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_12_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_12_LKR));
+                sumLKR.add(finesPrice);
+            }
+            if (currentX == 13) {
+                fineList = getResources().getString(R.string.Rule_13);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_13_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_13_LKR));
+                sumLKR.add(finesPrice);
+            }
+            if (currentX == 14) {
+                fineList = getResources().getString(R.string.Rule_14);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_14_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_14_LKR));
+                sumLKR.add(finesPrice);
+            }
+            if (currentX == 15) {
+                fineList = getResources().getString(R.string.Rule_15);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_15_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_15_LKR));
+                sumLKR.add(finesPrice);
+            }
+            if (currentX == 16) {
+                fineList = getResources().getString(R.string.Rule_16);
+                ruleArray_list.add("\n");
+                ruleArray_list.add(fineList);
+                finesPriceView = getResources().getString(R.string.Rule_16_LKR);
+                ruleArray_list.add("\n LKR. ");
+                ruleArray_list.add(finesPriceView);
+                finesPrice = Integer.parseInt(getResources().getString(R.string.Rule_16_LKR));
+                sumLKR.add(finesPrice);
+            }
         }
     }
 
 
-    public void addHotel() {
+    public void addFine() {
 //        dbRef = FirebaseDatabase.getInstance().getReference(district + "/ClientHotel");
         dbRef = FirebaseDatabase.getInstance().getReference().child("Fines");
 //        fineObj = new FinesDetails();

@@ -45,6 +45,7 @@
         </TableRow>
         <!--TABLE HEADER END-->
 
+<!--        1-->
         <TableRow
             android:id="@+id/Row_01"
             android:layout_marginTop="10px"
@@ -83,6 +84,7 @@
                 android:layout_weight="2" />
         </TableRow>
 
+<!--        2-->
         <TableRow
             android:id="@+id/Row_02"
             android:layout_marginTop="10px"
@@ -121,6 +123,7 @@
                 android:layout_weight="2" />
         </TableRow>
 
+<!--        3-->
         <TableRow
             android:id="@+id/Row_03"
             android:layout_marginTop="10px"
@@ -159,6 +162,7 @@
                 android:layout_weight="2" />
         </TableRow>
 
+<!--        4-->
         <TableRow
             android:id="@+id/Row_04"
             android:layout_marginTop="10px"
@@ -197,6 +201,7 @@
                 android:layout_weight="2" />
         </TableRow>
 
+<!--        5-->
         <TableRow
             android:id="@+id/Row_05"
             android:layout_marginTop="10px"
@@ -235,6 +240,7 @@
                 android:layout_weight="2" />
         </TableRow>
 
+<!--        6-->
         <TableRow
             android:id="@+id/Row_06"
             android:layout_marginTop="10px"
@@ -246,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_weight="2"
-                android:text="05" />
+                android:text="06" />
 
             <TextView
                 android:id="@+id/Rule_06"
@@ -273,6 +279,7 @@
                 android:layout_weight="2" />
         </TableRow>
 
+<!--        7-->
         <TableRow
             android:id="@+id/Row_07"
             android:layout_marginTop="10px"
@@ -304,6 +311,357 @@
 
             <CheckBox
                 android:id="@+id/CheckRule_07"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        8-->
+        <TableRow
+            android:id="@+id/Row_08"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="08" />
+
+            <TextView
+                android:id="@+id/Rule_08"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_08" />
+
+            <TextView
+                android:id="@+id/Rule_08_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_08_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_08"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        9-->
+        <TableRow
+            android:id="@+id/Row_09"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="09" />
+
+            <TextView
+                android:id="@+id/Rule_09"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_09" />
+
+            <TextView
+                android:id="@+id/Rule_09_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_09_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_09"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        10-->
+        <TableRow
+            android:id="@+id/Row_10"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/Rule_10"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_10" />
+
+            <TextView
+                android:id="@+id/Rule_10_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_10_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_10"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        11-->
+        <TableRow
+            android:id="@+id/Row_11"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="11" />
+
+            <TextView
+                android:id="@+id/Rule_11"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_11" />
+
+            <TextView
+                android:id="@+id/Rule_11_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_11_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_11"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        12-->
+        <TableRow
+            android:id="@+id/Row_12"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="12" />
+
+            <TextView
+                android:id="@+id/Rule_12"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_12" />
+
+            <TextView
+                android:id="@+id/Rule_12_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_12_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_12"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        13-->
+        <TableRow
+            android:id="@+id/Row_13"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="13" />
+
+            <TextView
+                android:id="@+id/Rule_13"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_13" />
+
+            <TextView
+                android:id="@+id/Rule_13_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_13_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_13"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        14-->
+        <TableRow
+            android:id="@+id/Row_14"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="14" />
+
+            <TextView
+                android:id="@+id/Rule_14"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_14" />
+
+            <TextView
+                android:id="@+id/Rule_14_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_14_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_14"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        15-->
+        <TableRow
+            android:id="@+id/Row_15"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="15" />
+
+            <TextView
+                android:id="@+id/Rule_15"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_15" />
+
+            <TextView
+                android:id="@+id/Rule_15_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_15_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_15"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2" />
+        </TableRow>
+
+<!--        16-->
+        <TableRow
+            android:id="@+id/Row_16"
+            android:layout_marginTop="10px"
+            android:background="#33000000"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:text="16" />
+
+            <TextView
+                android:id="@+id/Rule_16"
+                android:layout_width="306dp"
+                android:layout_height="60dp"
+                android:layout_column="2"
+                android:layout_weight="4"
+                android:text="@string/Rule_16" />
+
+            <TextView
+                android:id="@+id/Rule_16_LKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="2"
+                android:text="@string/Rule_16_LKR" />
+
+            <CheckBox
+                android:id="@+id/CheckRule_16"
                 android:onClick="onCheckboxClicked"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

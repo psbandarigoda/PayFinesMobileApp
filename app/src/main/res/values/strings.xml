@@ -28,6 +28,9 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="card_number_txt">Card Number</string>
+    <string name="card_cvv_txt">Card Number</string>
+
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
@@ -42,8 +45,17 @@
     <string name="Rule_03">සංඥා සහ පොලිස් නිලධාරීන්ගේ විධාන \n பொலிசாரின் பணிப்புரைக்கு \n Signals directions of Police Officer</string>
     <string name="Rule_04">බලපත්‍ර නොමැතිව පැදවීම \n அனுப் பத், இல்லாமல் செலுத்துதல் \n Without D.L.</string>
     <string name="Rule_05">අවු. 18ට අඩු අය රිය පැදවීම \n வயதுக்கு குறைந்தவர் வாகனம் செலுத்த \n Driving under 18 years of age</string>
-    <string name="Rule_06">Rule_06">බලපත්‍ර නොමැති අයෙකු \n வேலைக்கு அமர்த்துதல் \n Employing' person without D.L.</string>
+    <string name="Rule_06">බලපත්‍ර නොමැති අයෙකු \n வேலைக்கு அமர்த்துதல் \n Employing person without D.L.</string>
     <string name="Rule_07">ආදායම් බලපත්‍රය රැගෙන නොයෑම \n இறைவரி அனு. பத். கொண்டு செல்  \n R. L not carried</string>
+    <string name="Rule_08">හඳුනාගැනීමේ තහඩුව \n அடையாள தகடுகள் \n identification plates</string>
+    <string name="Rule_09">ආදායම් බලපත්‍ර නීති උල්ලංඝනය \n ஆர்.எல். விதிகளை மீறுதல் \n contravening R.L. provisions</string>
+    <string name="Rule_10">බලපත්‍ර නොමැතිව හදිසි සේවා හා පොදු සේවා වාහනයක් පැදවීම \n ஓட்டுநர் உரிமம் இல்லாமல் அவசர சேவை வாகனம் மற்றும் பொது சேவை வாகனங்களை ஓட்டுதல் \n driving emergency service vehicle and public service vehicles without driving licence</string>
+    <string name="Rule_11">බලපත්‍රයක් නොමැතිව විශේෂ කාර්ය වාහන පැදවීම \n ஓட்டுநர் உரிமம் இல்லாமல் சிறப்பு நோக்கம் கொண்ட வாகனங்களை ஓட்டுதல் \n driving special purpose vehicles  without driving licence</string>
+    <string name="Rule_12">පන්තියකට අයත් වාහනයක් පැදවීම \n ஒரு குறிப்பிட்ட வகை வாகனத்தை ஓட்ட உரிமம் பெற்றிருத்தல் \n සදහා බලපත්‍රයක් නොමැති වීම not having a license to drive a specific class of vehicle</string>
+    <string name="Rule_13">ආරක්ෂිත හිස්වැස්මක් නොපැලදීම \n பாதுகாப்பு ஹெல்மெட் அணியவில்லை \n not wearing protective helmets</string>
+    <string name="Rule_14">ධාවනය වන විට දැන්වීම් බෙදා හැරීම \n விளம்பர விநியோகம் \n distribution of advertisment</string>
+    <string name="Rule_15">පොලිස් නිලධාරීන් රිය නියාමකයන් ගේ විධාන වලට සහ සංඥා වලට අවනත නොවීම \n காவல்துறை அதிகாரிகளின் போக்குவரத்து வார்டன்களின் வழிமுறைகள் மற்றும் சமிக்ஞை \n disobeying directions and signal of police officers traffic wardens</string>
+    <string name="Rule_16">මාර්ග සංඥා නොපිළිපැදීම \n போக்குவரத்து சமிக்ஞையுடன் புகார் \n complaint with traffic signal</string>
 
 
     <string name="Rule_01_LKR">1000</string>
@@ -53,4 +65,21 @@
     <string name="Rule_05_LKR">5000</string>
     <string name="Rule_06_LKR">3000</string>
     <string name="Rule_07_LKR">500</string>
+    <string name="Rule_08_LKR">1000</string>
+    <string name="Rule_09_LKR">1000</string>
+    <string name="Rule_10_LKR">1000</string>
+    <string name="Rule_11_LKR">1000</string>
+    <string name="Rule_12_LKR">1000</string>
+    <string name="Rule_13_LKR">1000</string>
+    <string name="Rule_14_LKR">1000</string>
+    <string name="Rule_15_LKR">1000</string>
+    <string name="Rule_16_LKR">1000</string>
+
+
+    <string name="pay_userName" />
+    <string name="pay_fineID" />
+    <string name="pay_totalPrice"></string>
+    <string name="card_number">Card Number</string>
+    <string name="card_cvv">CVV</string>
+    <string name="card_expire_date">Expire Date</string>
 </resources>
