@@ -76,7 +76,7 @@ public class PayFines extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                updatePaymentStatus();
+//                updatePaymentStatus();
 
                 String url = "http://textit.biz/sendmsg/index.php?id=94773638063&pw=5584&to="+contact+"&text=PAYMENT+SUCCESSFUL+\n+OfficerRegNo"+officerName+"+\n+FineID"+fineID+"+\n+Paid+Amount+LKR:"+FineTotPrice+" ";
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -84,6 +84,17 @@ public class PayFines extends AppCompatActivity {
                 i.setPackage("com.android.chrome");
                 try {
                     startActivity(i);
+
+                    finishAffinity();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+
+                            Intent i=new Intent(PayFines.this,RulesList.class);
+                            startActivity(i);
+                        }
+                    }, 2000);
+
                 } catch (ActivityNotFoundException e) {
                     i.setPackage(null);
                     startActivity(i);
@@ -92,14 +103,14 @@ public class PayFines extends AppCompatActivity {
 //                Intent intent = new Intent(PayFines.this, RulesList.class);
 //                startActivity(intent);
 
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        Intent i=new Intent(PayFines.this,RulesList.class);
-                        startActivity(i);
-                    }
-                }, 3000);
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//
+//                        Intent i=new Intent(PayFines.this,RulesList.class);
+//                        startActivity(i);
+//                    }
+//                }, 3000);
 
                 Toast.makeText(getApplicationContext(), "Paid Success", Toast.LENGTH_LONG).show();
 
