@@ -10,7 +10,19 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.payfines.model.FinesDetails;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Map;
 
 
 public class PayFines extends AppCompatActivity {
@@ -24,6 +36,11 @@ public class PayFines extends AppCompatActivity {
     String userName, officerName, fineID, FineTotPrice, contact;
     String message = "payment success";
     TextView setUserName, setFineID, setFineTotPrice, setOffenderName, setOffenderContact;
+    DatabaseReference dbRef;
+    FinesDetails fineObj = new FinesDetails();
+    ArrayList<String> ruleArray_list = new ArrayList<String>();
+    Date dateTime;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +76,8 @@ public class PayFines extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                updatePaymentStatus();
+
                 String url = "http://textit.biz/sendmsg/index.php?id=94773638063&pw=5584&to="+contact+"&text=PAYMENT+SUCCESSFUL+\n+OfficerRegNo"+officerName+"+\n+FineID"+fineID+"+\n+Paid+Amount+LKR:"+FineTotPrice+" ";
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -72,7 +91,6 @@ public class PayFines extends AppCompatActivity {
 
 //                Intent intent = new Intent(PayFines.this, RulesList.class);
 //                startActivity(intent);
-                Toast.makeText(getApplicationContext(), "Paid Success", Toast.LENGTH_LONG).show();
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -81,11 +99,64 @@ public class PayFines extends AppCompatActivity {
                         Intent i=new Intent(PayFines.this,RulesList.class);
                         startActivity(i);
                     }
-                }, 4000);
+                }, 3000);
+
+                Toast.makeText(getApplicationContext(), "Paid Success", Toast.LENGTH_LONG).show();
 
             }
         });
 
     }
+
+    public void updatePaymentStatus(){
+
+//        FirebaseDatabase.getInstance().getReference().child("Fines").child(fineID).child("status").setValue(status);
+
+
+        String status = "paid";
+
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Fines");
+        dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                Map<String,Object> fineDetails = (Map<String, Object>) dataSnapshot.getValue();
+                Map<String,Object>  fine = (Map<String, Object>) fineDetails.get(fineID);
+                if(fine != null){
+//                    String officerPass = fine.get("status").toString();
+                    ruleArray_list = (ArrayList<String>) fine.get("rule");
+
+                    fineObj.setDl(fine.get("status").toString());
+                    fineObj.setName(fine.get("status").toString());
+                    fineObj.setEmail(fine.get("status").toString());
+                    fineObj.setContact(fine.get("status").toString());
+                    fineObj.setAddress(fine.get("status").toString());
+                    fineObj.setLocation(fine.get("status").toString());
+                    fineObj.setOfficerId(fine.get("status").toString());
+                    fineObj.setTotal(Integer.parseInt(fine.get("status").toString()));
+                    fineObj.setStatus(fine.get("status").toString());
+                    fineObj.setRule(ruleArray_list);
+                    fineObj.setStatus("paid");
+
+                    dbRef.child(fineID).setValue(fineObj);
+
+
+                }else{
+                    Toast.makeText(getApplicationContext(), "Fine status Error", Toast.LENGTH_LONG).show();
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+
+      });
+
+
+    }
+
 
 }
